@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Calculate Postal Rates</title>
+   </head>
+   <body>
+      <h1>Calculate Your Postage Rate</h1>
+      <br />
+
+      <form action="getRate" method="get">
+         <select name="mailType">
+            <option value="letterStamp">Letters (Stamped)</option>
+            <option value="letterMetered">Letters (Metered)</option>
+            <option value="largeEnvelopes">Large Envelopes (Flats)</option>
+            <option value="firstClass">First-Class Package Service—Retail</option>
+         </select>
+         <br />
+         <input type="number" required name="weight" min="0" step=".01"> (oz.)
+         <br />
+         <input type="Submit" name="Submit" value="Calculate" />
+      </form>
+   </body>
+</html>

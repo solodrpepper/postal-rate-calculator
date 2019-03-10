@@ -35,6 +35,8 @@ function calculateRate(mailType, weight, handleResult) {
         cost = 0.85;
       } else if (weight <= 3.5) {
         cost = 1;
+      } else {
+        cost = 1;
       }
       mailType = 'Letter (Stamped)';
       break;
@@ -46,6 +48,8 @@ function calculateRate(mailType, weight, handleResult) {
       } else if (weight <= 3) {
         cost = 0.80;
       } else if (weight <= 3.5) {
+        cost = 0.95;
+      } else {
         cost = 0.95;
       }
       mailType = 'Letter Metered';
@@ -66,6 +70,8 @@ function calculateRate(mailType, weight, handleResult) {
       } else if (weight <= 12) {
         cost = 5.19;
       } else if (weight <= 14) {
+        cost = 5.71;
+      } else {
         cost = 5.71;
       }
       mailType = 'First-Class Package Service—Retail';
